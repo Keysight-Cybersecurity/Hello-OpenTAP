@@ -1,8 +1,8 @@
 using OpenTap;
 
-namespace MyOpenTAPProject3
+namespace MyOpenTAPProject
 {
-    [Display("MyTestStep", Description: "Insert a description here", Group: "MyOpenTAPProject3")]
+    [Display("MyTestStep", Description: "Insert a description here", Group: "MyOpenTAPProject")]
 
     public class MyTestStep : TestStep
     {
@@ -24,7 +24,7 @@ namespace MyOpenTAPProject3
             Log.Info("Hello, OpenTAP world!");
 
             // Example parameter usage:
-            Log.Info($"This step is running in project: {nameof(MyOpenTAPProject3)}");
+            Log.Info($"This step is running in project: {nameof(MyOpenTAPProject)}");
 
             UpgradeVerdict(Verdict.Pass);
         }
@@ -37,3 +37,4 @@ namespace MyOpenTAPProject3
         }
     }
 }
+
